@@ -1,0 +1,18 @@
+Setting ERP
+Steps:-
+1- Goto to the location were file is downloaded
+2- ./install_odoo11.sh
+3- cd / odoo/odoo-service
+4- pip3 install -r requirements.txt
+5- sudo su odoo
+6- /odoo/odoo-server/odoo-bin--addons-path=" /odoo/odoo-server/addons, /odoo/custom/addons"
+
+
+Setting DataBase(Postgresql)
+Steps:-
+1- sudo service postgresql start
+2- sudo su postgtres
+3- createuser odoo -s
+4- psql templte1
+5 \q
+6- exit
